@@ -1,0 +1,11 @@
+{
+  "name": "nothing-to-wear2",
+  "version": "1.0.0",
+  "description": "A fashion app to help you get dressed",
+  "main": "\u001b[D\u001b[D\u001b[3~\u001b[3~\u001b[3~\u001b[C\u001b[C\u001b[3~\u001b[3~\u001b[src/server.js)",
+  "scripts": {
+    "test": "cross-env NODE_ENV=test node ./node_modules/jasmine/bin/jasmine.js"
+  },
+  "author": "mariel",
+  "license": "ISC"
+}
