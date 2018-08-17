@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <% include ./partials/head.ejs %>
+
+    </head>
+    <body>
+        <% include ./partials/navbar.ejs %>
+
+        <h3>What's the weather today?</h3>
+
+        <form>
+            <div class = "form-group">
+                <input type = "text" class = "form-control" name = "location" aria-describedby="locationHelp" placeholder="Enter your zip code">
+            </div>
+            <button type ="submit" class = "btn btn-primary">Submit</button>
+        </form>
+    <% include ./partials/baseScripts.ejs %>
+    </body>
+    
+</html>
