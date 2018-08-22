@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include ../static/partials/head.ejs %>
+  </head>
+  <body>
+    <% include ../static/partials/navbar.ejs %>
+
+    <main class="container">
+      <h1>Weather:</h1>  
+      <h1><%= weather.city %></h1>
+      <h2><%= weather.temperature %>°F</h2>
+      <p>Conditions: <%= weather.conditions %></p>
+      <p>Wind: <%= weather.wind %>mph</p>
+    </main>
+
+    <% include ../static/partials/baseScripts.ejs %>
+
+  </body>
+</html>
