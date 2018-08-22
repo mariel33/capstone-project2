@@ -1,0 +1,28 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": null,
+    "database": "nothing-to-wear",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "logging": false,
+    "operatorAliases": false
+  },
+  "test": {
+    "username": "postgres",
+    "password": null,
+    "database": "nothing-to-wear-test",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "logging": false,
+    "operatorAliases": false
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "use_env_variable": "DATABASE_URL"
+  }
+}

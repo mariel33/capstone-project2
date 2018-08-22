@@ -14,13 +14,5 @@ describe("routes : static", () => {
             });
         });
 
-        it("should render a field to enter location", (done) => {
-            request.get(base, (err, res, body) => {
-                expect(err).toBeNull();
-                expect(body).toContain("What's the weather today?");
-                done();
-            })
-
-        })
     });
 });
