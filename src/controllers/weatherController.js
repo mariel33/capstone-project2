@@ -11,7 +11,6 @@ module.exports = {
     },
 
     create(req, res, next) {
-        console.log(req.body.zipCode);
         weatherQueries.getWeather(req.body.zipCode, (err, weather) => {
             if(err) {
                 console.log(err);

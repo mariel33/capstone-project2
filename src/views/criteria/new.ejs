@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <% include ../static/partials/head.ejs %>
+</head>
+
+<body>
+    <% include ../static/partials/navbar.ejs %>
+
+        <main>
+            <form action="/criteria/create" method="post">
+                <div class="dropdown show">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        What are your plans for today?
+                    </a>
+
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" name = "activity">
+                        <li class="dropdown-item" value = "Work">Work</li>
+                        <li class="dropdown-item" value = "Brunch">Brunch</li>
+                        <li class="dropdown-item" value = "Hike">Hike</li>
+                        <li class="dropdown-item" value = "Sporting Event">Sporting Event</li>
+                        <li class="dropdown-item" value = "Shopping">Shopping</li>
+                        <li class="dropdown-item" value = "Dinner">Dinner</li>
+                        <li class="dropdown-item" value = "Hosting Company">Hosting Company</li>
+                    </ul>
+                </div>
+                <div class="dropdown show">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        What is the dress code?
+                    </a>
+
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" name = "dresscode">
+                        <li class="dropdown-item" value = "Professional">Professional</li>
+                        <li class="dropdown-item" value = "Business Casual">Business Casual</li>
+                        <li class="dropdown-item" value = "Casual">Casual</li>
+                        <li class="dropdown-item" value = "Athletic">Athletic</li>
+                        <li class="dropdown-item" value = "Fancy">Fancy</li>
+                        <li class="dropdown-item" value = "Dressy Casual">Dressy Casual</li>
+                    </ul>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+
+        </main>
+
+        <% include ../static/partials/baseScripts.ejs %>
+
+</body>
+
+</html>

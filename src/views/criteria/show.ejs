@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include ../static/partials/head.ejs %>
+  </head>
+  <body>
+    <% include ../static/partials/navbar.ejs %>
+
+    <main class="container">
+      <h1>Outfit suggestions for:</h1>
+      <h3>Activity: <%= criteria.activity %></h3>
+
+      <h3>Dresscode: <%= criteria.dresscode %></h3>
+    </main>
+
+    <% include ../static/partials/baseScripts.ejs %>
+
+  </body>
