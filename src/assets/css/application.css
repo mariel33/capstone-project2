@@ -4,3 +4,18 @@ body {
     text-align: center;
     color: white;
 }
+
+.dropdown-list {
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+
+}
+
+#activity-list, #dresscode-list {
+    padding: 20px;
+}

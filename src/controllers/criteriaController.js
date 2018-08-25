@@ -9,8 +9,8 @@ module.exports = {
     },
     create(req, res, next){
         let newCriteria = {
-            activity: req.body.activity.value,
-            dresscode: req.body.dresscode.value
+            activity: req.body.activity,
+            dresscode: req.body.dresscode
         };
         criteriaQueries.addCriteria(newCriteria, (err, criteria) => {
             if(err) {

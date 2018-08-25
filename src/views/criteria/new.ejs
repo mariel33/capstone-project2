@@ -10,37 +10,32 @@
 
         <main>
             <form action="/criteria/create" method="post">
-                <div class="dropdown show">
-                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
-                        What are your plans for today?
-                    </a>
+                <div class = "container" id ="activity-list">
+                <select required class="dropdown-list" name="activity">
+                    <option value = "0" disabled selected>What are your plans?</option>
+                    <option value="Work">Work</option>
+                    <option value="Shopping">Shopping</option>
+                    <option value="School">School</option>
+                    <option value="Brunch">Brunch</option>
+                    <option value="Hike">Hike</option>
+                    <option value="Sporting event">Sporting event</option>
+                    <option value="Hosting company">Hosting company</option>
+                    <option value="Dinner">Dinner</option>
+                    <option value="Out with friends">Out with friends</option>
+                </select>
+            </div>
+            <div class = "container"  id ="dresscode-list">
+                <select required class="dropdown-list" name = "dresscode">
+                    <option value = "0" disabled selected>What is the dress code?</option>
+                    <option value="Casual">Casual</option>
+                    <option value="Professional">Professional</option>
+                    <option value="Business casual">Business casual</option>
+                    <option value="Formal">Formal</option>
+                    <option value="Active">Active</option>
+                    <option value="Dressy casual">Dressy casual</option>
+                </select>
+            </div>
 
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" name = "activity">
-                        <li class="dropdown-item" value = "Work">Work</li>
-                        <li class="dropdown-item" value = "Brunch">Brunch</li>
-                        <li class="dropdown-item" value = "Hike">Hike</li>
-                        <li class="dropdown-item" value = "Sporting Event">Sporting Event</li>
-                        <li class="dropdown-item" value = "Shopping">Shopping</li>
-                        <li class="dropdown-item" value = "Dinner">Dinner</li>
-                        <li class="dropdown-item" value = "Hosting Company">Hosting Company</li>
-                    </ul>
-                </div>
-                <div class="dropdown show">
-                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
-                        What is the dress code?
-                    </a>
-
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" name = "dresscode">
-                        <li class="dropdown-item" value = "Professional">Professional</li>
-                        <li class="dropdown-item" value = "Business Casual">Business Casual</li>
-                        <li class="dropdown-item" value = "Casual">Casual</li>
-                        <li class="dropdown-item" value = "Athletic">Athletic</li>
-                        <li class="dropdown-item" value = "Fancy">Fancy</li>
-                        <li class="dropdown-item" value = "Dressy Casual">Dressy Casual</li>
-                    </ul>
-                </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
 

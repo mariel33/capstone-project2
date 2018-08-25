@@ -35,7 +35,7 @@ describe("routes : criteria", () => {
 
         it("should render a drop down with options for activity and dresscode", (done) => {
             request.get(`${base}new`, (err, res, body) => {
-                expect(body).toContain("What are your plans for today?");
+                expect(body).toContain("What are your plans?");
                 done();
             });
         });
